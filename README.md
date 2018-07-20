@@ -17,25 +17,6 @@ Download jquery- 3.3.1.min.js
 * If a single 1 is rolled, the player scores nothing and the turn ends.
 * If two 1s are rolled, the player’s entire score is lost, and the turn ends.
 * If a double is rolled, the point total is added to the turn total as with any roll but the player is obligated to roll again.
-G
-enerate a random number 1-6
-Example Input: function()
-Example Output: 5
-Add roll to scoreTurn
-Example Input: scoreTurn 4, roll 3
-Example Output: scoreTurn 7
-If a 1 is rolled, scoreTurn is 0
-Example Input: roll 1, scoreTurn 10
-Example Output: scoreTurn 0
-When turn is over add scoreTurn to scoreGame
-Example Input: scoreGame 20, scoreTurn 10
-Example Output: scoreGame 30
-When turn is over scoreTurn resets to 0
-Example Input: scoreTurn 10
-Example Output: scoreTurn 0
-If a players scoreGame reaches 100 the game is over and that player wins
-Example Input: scoreGame 105
-Example Output: "Player wins! Game Over"
 
 #### Known Bugs
 No known bugs.

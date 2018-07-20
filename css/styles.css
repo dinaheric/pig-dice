@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
 }
-
 body{
     padding: 0;
     margin: 0;
@@ -17,8 +16,7 @@ body{
   
   .jumbotron {
     color: black;
-    background-color: ivory;
-    border: 3px solid purple;
+    background-color: ivory
   }
   
   img {
