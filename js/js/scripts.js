@@ -1,6 +1,6 @@
-function Pigs(pig1, pig2) {
-  this.pig1 = pig1;
-  this.pig2 = pig2;
+function Names(name1, name2) {
+  this.name1 = name1;
+  this.name2 = name2;
 }
 
 var pigGame = {
@@ -86,16 +86,16 @@ function alertWinner(playerNumber) {
 $(document).ready(function() {
 
   $("form#pigForm").submit(function(event){
-    var playerpig1 = $("input#playerpig1").val();
-    var playerpig2 = $("input#playerpig2").val();
-      $("span#playerpig1").text(playerpig1);
-      $("span#playerpig2").text(playerpig2);
+    var playerName1 = $("input#playerName1").val();
+    var playerName2 = $("input#playerName2").val();
+      $("span#playerName1").text(playerName1);
+      $("span#playerName2").text(playerName2);
       $("#player2Button").hide();
       $("#player1Button").show();
       $(".playerStatus").text(pigGame.playerUp);
       event.preventDefault();
 
-    var nameHolder = new Pigs(playerPig1, playerPig2);
+    var nameHolder = new Pigs(playername1, playername2);
   })
 
 

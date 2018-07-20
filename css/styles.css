@@ -1,7 +1,19 @@
-body {
-    background-color: bluegreen;
-    background-image: url (/..images/piddice-photo-.jpeg)
-  }
+@import url('https://fonts.googleapis.com/css?family=Marvel:400,400i,700,700i');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-image: url("/..images/piddice-photo-.jpeg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    font-family: 'Marvel',serif;
+}
   
   .jumbotron {
     color: black;
@@ -15,13 +27,13 @@ body {
   }
   
   #gameDisplayPlayer1 {
-    background-color: ivory;
-    border: 2px solid yellow;
+    background-color: lightblue;
+    border: 2px solid green;
   }
   
   #gameDisplayPlayer2 {
     background-color: ivory;
-    border: 2px solid yellow;
+    border: 2px solid pink;
   }
   
   h1 {
