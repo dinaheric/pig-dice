@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  Pig Dice
 
 ### Author
@@ -40,3 +41,7 @@ version 2.0,January 2004
 (http://www.apache.org/licenses/)
 
 Copyright (c) 2016 Dean Scelza, Nhat Hoang, Epciodus
+=======
+# pig-dice
+This is a game where 2 users play against each other
+>>>>>>> d799a62254164636a126e3342faeb951f084bca7
