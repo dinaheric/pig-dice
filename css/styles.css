@@ -56,3 +56,11 @@
   #playerNameTwo::after{
     content:"'s";
   }
+  .btn-primary{
+    background-color: #fff;
+    color:dodgerblue;
+  }
+  .btn-success{
+    background-color: #fff;
+    color: green;
+  }
