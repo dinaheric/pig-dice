@@ -46,3 +46,8 @@
     background-color: #ace;
     height: 100px;
   }
+  hr{
+    width: 70%;
+    border-bottom: 3px solid #999;
+    margin: 0 auto;
+  }
