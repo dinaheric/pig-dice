@@ -5,8 +5,8 @@ function Names(name1, name2) {
   }
 // This manipulates the form attribute in the html
   var pigGame = {
-    player1Score: 0,
-    player2Score: 0,
+    playerOneScore: 0,
+    playerTwoScore: 0,
     playerUp: 1,
     turnScore: 0,
   };
@@ -26,10 +26,10 @@ function Names(name1, name2) {
     } else {
       pigGame.turnScore +=roll;
       if (pigGame.playerUp === 1) {
-        if (pigGame.turnScore + pigGame.player1Score >= 21) {
+        if (pigGame.turnScore + pigGame.playerOneScore >= 21) {
           alertWinner(1);
         }
-      } else if (pigGame.turnScore + pigGame.player2Score >= 21) {
+      } else if (pigGame.turnScore + pigGame.playerTwoScore >= 21) {
         alertWinner(2);
     }
     }
@@ -40,9 +40,9 @@ function Names(name1, name2) {
   function holdThePig() {
     var currentPlayer = pigGame.playerUp;
     if (currentPlayer ===1) {
-      pigGame.player1Score += pigGame.turnScore;
+      pigGame.playerOneScore += pigGame.turnScore;
     } else {
-      pigGame.player2Score += pigGame.turnScore;
+      pigGame.playerTwoScore += pigGame.turnScore;
     }
     pigGame.turnScore = 0;
     switchPlayer();
@@ -51,21 +51,21 @@ function Names(name1, name2) {
 // function for switching the player
   function switchPlayer () {
     if (pigGame.playerUp === 1) {
-      $("#player1Button").hide();
-      $("#player2Button").show();
+      $("#playerOneButton").hide();
+      $("#playerTwoButton").show();
       pigGame.playerUp = 2;
   
     } else {
-      $("#player2Button").hide();
-      $("#player1Button").show();
+      $("#playerTwoButton").hide();
+      $("#playerOneButton").show();
       pigGame.playerUp = 1;
   
     }
   }
 // function for resetting user scores
   function resetGame() {
-    pigGame.player1Score = 0;
-    pigGame.player2Score = 0;
+    pigGame.playerOneScore = 0;
+    pigGame.playerTwoScore = 0;
     pigGame.playerUp = 1;
     pigGame.turnScore = 0;
   }
@@ -92,8 +92,8 @@ function Names(name1, name2) {
       var playerNameTwo = $("input#playerNameTwo").val();
         $("span#playerNameOne").text(playerNameOne);
         $("span#playerNameTwo").text(playerNameTwo);
-        $("#player2Button").hide();
-        $("#player1Button").show();
+        $("#playerTwoButton").hide();
+        $("#playerOneButton").show();
         $(".playerStatus").text(pigGame.playerUp);
         event.preventDefault();
   
@@ -111,8 +111,8 @@ function Names(name1, name2) {
     $(".holdPig").click(function(){
       holdThePig();
       $("rollResult").text("");
-      $(".player1Score").text(pigGame.player1Score);
-      $(".player2Score").text(pigGame.player2Score);
+      $(".playerOneScore").text(pigGame.playerOneScore);
+      $(".playerTwoScore").text(pigGame.playerTwoScore);
       $(".playerStatus").text(pigGame.playerUp);
     });
   });

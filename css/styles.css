@@ -51,3 +51,9 @@
     border-bottom: 3px solid #999;
     margin: 0 auto;
   }
+  #playerNameOne::after{
+    content:"'s";
+  }
+  #playerNameTwo::after{
+    content:"'s";
+  }

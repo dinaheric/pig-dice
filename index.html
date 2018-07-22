@@ -48,14 +48,14 @@
 
           <div class="col-md-6">
             <!-- display the users score if die not yet rolled display 0 -->
-            <h1><span id="playerNameOne"></span> Score: <span class="gamestatusDisplay playerOneScore">0</span></h1>
-            <div class="playerOneButton">
+            <h1><span id="playerNameOne"></span> Score: <span class="gameStatusDisplay playerOneScore">0</span></h1>
+            <div id="playerOneButton">
               <!-- show message about who's turn is next after the roll of the die -->
-              <h3>Players turn</h3>
+              <h3>Player <span class="playerStatus" class="gameStatusDisplay"></span>   </h3>
               <!-- display the score of the user -->
-              <h3>Score</h3>
+              <h3>Score <span id="turnScore" class="gamestatusDisplay turnScore"></span></h3>
               <!-- display the result of the die roll -->
-              <h3>Roll Result</h3>
+              <h3>Roll Result <span id="rollResult" class="gamestatusDisplay rollResult"></span></h3>
               <!-- button to roll the dice once more -->
               <button class="btn btn-primary rollPig">Roll again</button>
               <!-- button to allow the second player a chance at the game -->
@@ -67,13 +67,13 @@
           <div class="col-md-6">
             <!-- display the second user's score or display 0 as default -->
               <h1><span id="playerNameTwo"></span> Score: <span class="gamestatusDisplay playerTwoScore">0</span></h1>
-              <div class="playerOneButton">
+              <div id="playerTwoButton">
                 <!-- show message of who's turn next -->
-                <h3>Players turn</h3>
+                <h3>Player <span class="playerStatus"></span> </h3>
                 <!-- display score for player two -->
-                <h3>Score</h3>
+                <h3>Score <span id="turnScore" class="gameStatusDisplay turnScore"></h3>
                 <!-- show roll result for player two -->
-                <h3>Roll Result</h3>
+                <h3>Roll Result <span id="rollResult" class="gamestatusDisplay"></span></h3>
                 <!-- roll die again for player two -->
                 <button class="btn btn-primary rollPig">Roll again</button>
                 <!-- pass the die to player one -->
