@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Marvel:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 *{
     padding: 0;
     margin: 0;
@@ -38,13 +38,12 @@
     color: #e40;
   /* font-style: italic; */
   }
-  .abe{
-    background-color: #abe;
-    height: 100px;
+  h2{
+    color: dodgerblue;
+    font-weight: 400;
   }
-  .ace{
-    background-color: #ace;
-    height: 100px;
+  h3{
+    font-weight: 400;
   }
   hr{
     width: 70%;

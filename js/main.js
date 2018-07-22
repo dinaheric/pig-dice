@@ -73,20 +73,20 @@ function Names(name1, name2) {
 
 // ----USER LOGIC ---- (below)--------
   
-  
+  // show javascript alert when one rolls the dice more than once or scores a one
   function alertEndTurn(){
     alert("Sorry - you rolled a 1.  Your score remains the same and your turn is over.");
     $(".playerStatus").text(pigGame.playerUp);
   }
-  
+  // shows a javascript alert box on the browser with who has won the game
   function alertWinner(playerNumber) {
-    alert("Player " + playerNumber + " is the BIG winner!!");
+    alert("Player " + playerNumber + " is the winner!!");
     resetGame();
     $(".gameStatusDisplay").text(0);
   }
   
   $(document).ready(function() {
-  
+  // submit values to the forms
     $("form#pigForm").submit(function(event){
       var playerNameOne = $("input#playerNameOne").val();
       var playerNameTwo = $("input#playerNameTwo").val();
@@ -96,18 +96,18 @@ function Names(name1, name2) {
         $("#playerOneButton").show();
         $(".playerStatus").text(pigGame.playerUp);
         event.preventDefault();
-  
+  // append playernames to the display div
       var nameHolder = new Names(playerNameOne, playerNameTwo);
     })
   
-  
+  // this code rolls the dice to give a random number that doesn't exceed 6
     $(".rollPig").click(function() {
       pigResult = playerRoll();
       $(".rollResult").text(pigResult);
       $(".turnScore").text(pigGame.turnScore);
   
     });
-  
+  //Record the player dice roll result and pass the chance to the next user
     $(".holdPig").click(function(){
       holdThePig();
       $("rollResult").text("");
