@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,8 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
   </head>
   <body>
     <div class="container">
@@ -14,61 +15,62 @@
             <!-- header row starts here -->
             <div class="col-md-12 text-center">
 
-            <marquee behavior="slide" direction=""><h1>PIG DICE</h1></marquee>
+            <marquee behavior="pop" direction=""><h1>PIG DICE</h1></marquee>
             </div>
         </div>
-
-      <div class="jumbotron">
-        <img src="images/pigdice-photo.jpeg">
-        <h1>Let's Play !!!</h1>
-
-
-      <form id="pigForm" class="form-group" action="index.html" method="post">
-        <div class="player-group">
-          <label class="player-group">Enter Player1</label>
-          <input id="playerName1" type="text">
-        </div>
-        <div class="playersName">
-          <label class="player-group">Enter Player2</label>
-          <input id="playerName2" type="text">
-        </div>
-        <button class="player-group btn-success" name="button">Submit</button>
-      </form>
+    </div>
+    <!-- header row ends here -->
+    <!-- start of body -->
+    <div class="container">
+      <h1>PIG DICE GAME</h1>
     </div>
 
-      <br>
-      <div class="gameDisplay">
-        <div class="col-md-5" id="gameDisplayPlayer1">
-          <h1><span id="playerName1"></span>'s Score: <span class="gameStatusDisplay  player1Score">0</span></h1>
-          <div id="player1Button">
-          <h2>Player <span class="playerStatus" class="gameStatusDisplay"></span>'s Turn</h2>
-          <h2>Score for this Turn: <span id="turnScore" class="gameStatusDisplay turnScore"></span></h2>
-          <h2>Roll Result: <span id="rollResult" class="gameStatusDisplay rollResult"></span></h2>
-
-          <button type="button" class="btn btn-warning btn-lg rollPig">(Re)Roll for More Points!</button>
-          <button type="button" class="btn btn-primary btn-lg holdPig">Stop rolling and keep points...</button>
+    <div class="container">
+        <div class="row">
+          <!-- first player and second player name entries-->
+          <div class="col-md-6">
+            <form class="form-group" id="pigForm" method="POST" action="index.html">
+              <label for="">Player One</label>
+              <input type="text" class="form-control" placeholder="Player One" id="playerNameOne">
+              <br>
+              <input type="text" class="form-control" placeholder="Player Two" id="playerNameTwo">
+              <br>
+              <button class="btn btn-success" name="button">Add</button>
+            </form>
           </div>
         </div>
-
-
-        <div class="col-md-5 col-md-offset-2" id="gameDisplayPlayer2">
-          <h1><span id="playerName2"></span>'s Score: <span class="gameStatusDisplay player2Score">0</span></h1>
-          <div id="player2Button">
-          <h2>Player <span class="playerStatus"></span>'s Turn</h2>
-
-          <h2>Score for this Turn: <span id="turnScore" class="gameStatusDisplay turnScore"></span></h2>
-          <h2>Roll Result: <span id="rollResult" class="gameStatusDisplay rollResult"></span></h2>
-
-
-          <button type="button" class="btn btn-warning btn-lg rollPig">(Re)Roll for More Points!</button>
-          <button type="button" class="btn btn-primary btn-lg holdPig">Stop rolling and keep points...</button>
-        </div>
-
-      </div>
-
-
-
-      </div>
     </div>
+
+    <!-- display for user results -->
+    <div class="container">
+        <div class="row">
+          <!-- player one area -->
+
+          <div class="col-md-6">
+            <h1 class="playerNameOne"> Score:</h1>
+            <div class="playerOneButton">
+              <h3>Players turn</h3>
+              <h3>Score</h3>
+              <h3>Roll Result</h3>
+              <button class="btn btn-primary rollPig">Roll again</button>
+              <button class="btn btn-success holdPig">Pass the dice</button>
+            </div>
+          </div>
+
+          <!-- player two area -->
+          <div class="col-md-6">
+              <h1 class="playerNameOne"> Score:</h1>
+              <div class="playerOneButton">
+                <h3>Players turn</h3>
+                <h3>Score</h3>
+                <h3>Roll Result</h3>
+                <button class="btn btn-primary rollPig">Roll again</button>
+                <button class="btn btn-success holdPig">Pass the dice</button>
+              </div>
+          </div>
+        </div>
+    </div>
+
+  
   </body>
 </html>

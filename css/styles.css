@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 }
-body{
+/* body{
     padding: 0;
     margin: 0;
     border: none;
@@ -18,7 +18,7 @@ body{
     color: black;
     background-color: ivory
   }
-  
+   */
   img {
     margin-top: 10px;
     float: right;
@@ -35,6 +35,14 @@ body{
   }
   
   h1 {
-    color: red;
-  font-style: italic;
+    color: #e40;
+  /* font-style: italic; */
+  }
+  .abe{
+    background-color: #abe;
+    height: 100px;
+  }
+  .ace{
+    background-color: #ace;
+    height: 100px;
   }
